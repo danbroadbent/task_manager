@@ -1,6 +1,20 @@
+<div class="page-header">
+  <h1>Enter a New Task</h1>
+</div>
+
+
 <form action="/tasks" method="post">
-  <p>Enter a new task</p>
-  <input type="text" name="task[title]"/><br/>
-  <textarea name="task[description]"></textarea><br/>
-  <input type="submit"/>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Task Name</span>
+    <input type="text" class="form-control" name="task[title]" placeholder="Task" aria-describedby="basic-addon1"/>
+  </div>
+  <br />
+
+  <label for="basic-url">Description</label>
+  <div class="form-group">
+    <textarea name="task[description]" class="form-control" rows="5"></textarea>
+    <div class="input-group">
+      <input type="submit"/>
+    </div>
+  </div>
 </form>
